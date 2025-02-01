@@ -1,7 +1,7 @@
 module.exports = {
    apps: [
       {
-         name: 'neoxr',
+         name: 'kyo',
          script: './index.js',
          node_args: '--max-old-space-size=1024',
          env: {
