@@ -13,7 +13,7 @@ const cache = new (require('node-cache'))({
 if (process.env.DATABASE_URL && /mongo/.test(process.env.DATABASE_URL)) MongoDB.db = env.database
 const machine = (process.env.DATABASE_URL && /mongo/.test(process.env.DATABASE_URL)) ? MongoDB : (process.env.DATABASE_URL && /postgres/.test(process.env.DATABASE_URL)) ? PostgreSQL : new (require('./lib/system/localdb'))(env.database)
 const client = new Baileys({
-   type: '--neoxr-v1',
+   type: '--kyo',
    plugsdir: 'plugins',
    // To see documentation : https://github.com/neoxr/session
    session: 'session',
